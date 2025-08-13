@@ -1,114 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>翻訳サンプル - 乙助マン</title>
+  <meta charset="UTF-8" />
+  <title>翻訳サンプル - 中央配置</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    /* ★ ページ全体を中央に（上下左右） */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
-      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      background-color: #f4f8fc;
-      padding: 0;
-      color: #333;
-      line-height: 1.8;
-      max-width: 900px;
-      margin: auto;
-    }
-    /* ヘッダー */
-    .header {
-      background-color: #0056b3;
-      color: white;
-      padding: 15px 20px;
-      text-align: center;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    .header a {
-      color: white;
-      text-decoration: none;
-    }
-    .header a:hover {
-      text-decoration: underline;
-    }
-    /* 本文 */
-    .content {
-      padding: 40px;
-    }
-    h1 {
-      color: #0056b3;
-      text-align: center;
-      font-size: 2.2em;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      margin-top: 40px;
-      border-bottom: 2px solid #0056b3;
-      padding-bottom: 5px;
-      text-align: center;
-      font-size: 1.4em;
-    }
-    p {
-      text-align: left;
-      font-size: 1.05em;
-    }
-    .sample {
-      margin: 20px 0;
+      display: flex;
+      align-items: center;      /* 垂直中央 */
+      justify-content: center;  /* 水平中央 */
       background: #ffffff;
-      padding: 15px;
-      border-left: 5px solid #0056b3;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      color: #333;
     }
-    .footer {
-      margin-top: 50px;
+
+    /* ★ コンテンツ箱（幅は適度に） */
+    .wrap {
+      width: min(900px, 92vw);
+      padding: 24px 20px;
+      box-sizing: border-box;
+      text-align: center;       /* すべて中央揃え */
+      line-height: 1.8;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      color: #007bff;
+    }
+
+    .block {
+      margin: 18px auto;
+      padding: 14px 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #f9fafb;
+    }
+
+    .label {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: bold;
       font-size: 14px;
-      color: #555;
-      text-align: center;
+      margin-bottom: 8px;
+      background: #eef2ff;
+      color: #1e40af;
     }
-    a {
-      color: #0056b3;
+
+    .home {
+      margin-top: 20px;
+      display: inline-block;
       text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      color: #111827;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+
+    /* （任意）印刷時にA4想定の余白を確保 */
+    @page { size: A4; margin: 12mm; }
   </style>
 </head>
 <body>
-  <!-- ヘッダー -->
-  <div class="header">
-    <a href="index.html">🏠 ホームページへ戻る</a>
-  </div>
+  <main class="wrap">
+    <h1>翻訳サンプル</h1>
 
-  <!-- 本文 -->
-  <div class="content">
-    <h1>🌍 Translation Sample – Otasukeman（乙助マン）</h1>
+    <section class="block">
+      <div class="label">🌸 日本語</div>
+      <p>
+        日本には数多くの天才ヴァイオリニストがいます。その中でも特に注目を集めているのは、現在13歳のHIMARIさんです。彼女は10歳までに日本や欧州の42のコンクールで1位を獲得し、10歳でアメリカのカーティス音楽院に最年少で合格しました。
+      </p>
+    </section>
 
-    <h2>サービス内容 / Services</h2>
-    <p>日本語 ⇄ 英語 ⇄ タガログ語の翻訳を承ります。</p>
+    <section class="block">
+      <div class="label">🔵 English</div>
+      <p>
+        Japan is home to many brilliant violin prodigies, but one who stands out in particular is 13-year-old HIMARI. By the age of 10, she had already won first place in <strong>42</strong> competitions across Japan and Europe, and at that same age, she became the youngest ever to be accepted into the Curtis Institute of Music in the United States.
+      </p>
+    </section>
 
-    <h2>📝 Sample 1: Japanese → English</h2>
-    <div class="sample">
-      日本の四季はとても美しく、春には桜が満開になります。<br>
-      <strong>→ The four seasons in Japan are very beautiful, and cherry blossoms bloom fully in spring.</strong>
-    </div>
+    <section class="block">
+      <div class="label">🔵 Tagalog</div>
+      <p>
+        Maraming magagaling na batang biyolinista sa Japan, ngunit ang isa sa mga pinaka-kapansin-pansin ay si HIMARI, na kasalukuyang 13 taong gulang. Bago pa siya mag-10 taong gulang, nanalo na siya ng unang gantimpala sa <strong>42</strong> na kompetisyon sa Japan at Europa, at sa parehong edad ay siya ang pinakabatang tinanggap sa Curtis Institute of Music sa Estados Unidos.
+      </p>
+    </section>
 
-    <h2>📝 Sample 2: English → Japanese</h2>
-    <div class="sample">
-      Please submit the visa application by the end of this week.<br>
-      <strong>→ 今週末までにビザ申請を提出してください。</strong>
-    </div>
-
-    <h2>📝 Sample 3: Tagalog → English</h2>
-    <div class="sample">
-      Magandang umaga! Kailangan ko po ng tulong sa dokumento.<br>
-      <strong>→ Good morning! I need help with the document.</strong>
-    </div>
-
-    <div class="footer">
-      📧 Email: <a href="mailto:muntinlupa2000@gmail.com">muntinlupa2000@gmail.com</a><br>
-      💬 LINE: <a href="https://line.me/ti/p/xxxxxx">https://line.me/ti/p/xxxxxx</a>
-    </div>
-  </div>
+    <!-- 「ホーム」へのリンク先は適宜差し替え -->
+    <a class="home" href="index.html">ホーム</a>
+  </main>
 </body>
 </html>
-

@@ -1,168 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
- <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お助けマン</title>
-  
-  <!-- ↓ ここ（8行目〜12行目付近）に追加します ↓ -->
-  <style>
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
-  <!-- ↑ ここまで ↑ -->
-
 </head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>お助けマン | 翻訳・写真加工・ビザサポート</title>
-  <style>
-    body {
-      font-family: sans-serif !important;
-      background-color: #f4f7f9 !important;
-      color: #333 !important;
-      margin: 0 !important;
-      padding: 20px 10px !important;
-      line-height: 1.6 !important;
-    }
-    header {
-      text-align: center !important;
-      padding: 20px 0 !important;
-      background: #0056b3 !important;
-      color: #fff !important;
-      border-radius: 8px !important;
-      margin-bottom: 20px !important;
-    }
-    header h1 { margin: 0 !important; font-size: 1.8rem !important; color: #fff !important; }
-    nav a { color: #fff !important; margin: 0 5px !important; text-decoration: none !important; }
-    
-    .grid {
-      display: grid !important;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-      gap: 20px !important;
-      max-width: 1000px !important;
-      margin: 0 auto !important;
-    }
-    .card {
-      background: #ffffff !important;
-      border-radius: 8px !important;
-      padding: 20px !important;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 15px !important;
-      align-items: flex-start !important;
-      box-sizing: border-box !important;
-    }
-    .card-icon {
-      font-size: 2rem !important;
-      line-height: 1 !important;
-      flex-shrink: 0 !important;
-      width: auto !important;
-      display: block !important;
-    }
-    .card-body { flex: 1 !important; }
-    .card-body h2 { font-size: 1.2rem !important; margin-top: 0 !important; margin-bottom: 10px !important; color: #111 !important; }
-    .card-body p { font-size: 0.95rem !important; margin-bottom: 15px !important; }
-    .btn {
-      display: inline-block !important;
-      padding: 8px 16px !important;
-      background: #0056b3 !important;
+<body style="margin: 0; padding: 0; background-color: #f4f6f8; font-family: sans-serif;">
+
+  <!-- ヘッダー -->
+  <header style="background-color: #0056b3; color: #ffffff; text-align: center; padding: 20px 10px;">
+    <h1 style="margin: 0 0 10px 0; font-size: 28px;">お助けマン</h1>
+    <p style="margin: 0 0 15px 0; font-size: 14px;">翻訳・写真加工・ビザ申請サポート — まずは無料相談</p>
+    <nav aria-label="主要ナビゲーション" style="font-size: 14px;">
+      <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;">日本語</a> | 
+      <a href="english.html" style="color: #ffffff; text-decoration: none;">English</a> | 
+      <a href="otasukeman.html" style="color: #ffffff; text-decoration: none;">料金</a> | 
+      <a href="sample_himari.html" style="color: #ffffff; text-decoration: none;">翻訳サンプル</a> | 
+      <a href="rona.html" style="color: #ffffff; text-decoration: none;">Rona英会話</a>
+    </nav>
+  </header>
+
+  <!-- カードエリア -->
   <main style="max-width: 1000px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
 
-  <!-- 1. Translation -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">📄 🌐</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">✅ Translation (EN / TL / JA)</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Business documents, contracts, emails, and resumes translated accurately with consistent terminology and readable style. Quick turnaround available.</p>
-    <a href="sample_himari.html" style="display: inline-block; padding: 8px 16px; border: 1px solid #0056b3; color: #0056b3; background: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">View Sample</a>
-  </div>
-
-  <!-- 2. Photo Editing -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">🖼️ ✨</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">✅ Photo Editing</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Natural retouching: wrinkle removal, tone correction, object removal, and face replacement while keeping a realistic look. Before/after available.</p>
-    <a href="#contact" style="display: inline-block; padding: 8px 16px; background: #0056b3; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">Ask About Editing</a>
-  </div>
-
-  <!-- 3. Visa & Document Support -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">🛂 📝</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">✅ Visa & Document Support</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Translation of forms, preparation of reason letters, and submission guidance from start to finish. Practical experience with document handling.</p>
-    <a href="otasukeman.html" style="display: inline-block; padding: 8px 16px; background: #0056b3; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">See Pricing</a>
-  </div>
-
-  <!-- 4. Photography -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">📷</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">✅ Photography</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Shooting and editing for hotels, food, and rooms. Optimized for web menus and listings (exposure, color, crop).</p>
-    <a href="#contact" style="display: inline-block; padding: 8px 16px; border: 1px solid #0056b3; color: #0056b3; background: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">Request a Shoot</a>
-  </div>
-
-  <!-- 5. Rona's Online English Lessons -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">💬</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">✅ Rona’s Online English Lessons</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Fun, English-only sessions covering basics to daily conversation.</p>
-    <a href="rona.html" style="display: inline-block; padding: 8px 16px; background: #0056b3; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">Open Lessons</a>
-  </div>
-
-  <!-- 6. Contact -->
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left;">
-    <div style="font-size: 24px; margin-bottom: 10px;">📩</div>
-    <h2 style="font-size: 18px; margin: 0 0 10px 0;">📩 Contact</h2>
-    <p style="font-size: 14px; color: #4b5563; line-height: 1.5; margin-bottom: 15px;">Start with a free consultation. We’ll propose schedule, scope, and a pricing estimate.</p>
-    <div style="display: flex; gap: 10px;">
-      <a href="mailto:example@gmail.com" style="padding: 8px 16px; background: #0056b3; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">Gmail</a>
-      <a href="https://line.me" style="padding: 8px 16px; background: #00b900; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">LINE</a>
+    <!-- 1. 翻訳 -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">📄 🌐</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">✅ 翻訳 (日・英・タガログ)</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">ビジネス文書・契約書・メール・履歴書などをEN/JA/TLで正確に翻訳。読みやすさと用語統一を重視し、短納期にも対応。</p>
+      </div>
+      <a href="sample_himari.html" style="display: block; padding: 10px 0; border: 1px solid #0056b3; color: #0056b3; background: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">サンプルを見る</a>
     </div>
-  </div>
 
-</main> 
-      
-   
-  
+    <!-- 2. 写真加工 -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">🖼️ ✨</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">✅ 写真加工 (自然仕上げ)</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">しわ消し・色調整・不要物消去・顔の差し替えなど、自然に見えるレタッチで印象アップ。ビフォー/アフター対応可。</p>
+      </div>
+      <a href="#contact" style="display: block; padding: 10px 0; background: #0056b3; color: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">写真加工を相談</a>
+    </div>
 
-   
-      
-  
+    <!-- 3. ビザ・各種書類サポート -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">🛂 📝</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">✅ ビザ・各種書類サポート</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">申請書の翻訳、理由書作成、提出手順のアドバイスまで一気通貫で支援。通関・書類対応の実務経験あり。</p>
+      </div>
+      <a href="otasukeman.html" style="display: block; padding: 10px 0; background: #0056b3; color: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">料金の目安</a>
+    </div>
 
- 
- 
-  
-   
-   
-  
+    <!-- 4. 写真撮影 -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">📷</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">✅ 写真撮影</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">ホテル・料理・部屋などの撮影と編集。Web掲載やメニュー写真向けに最適化（明るさ・色味・トリミング）。</p>
+      </div>
+      <a href="#contact" style="display: block; padding: 10px 0; border: 1px solid #0056b3; color: #0056b3; background: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">撮影を相談</a>
+    </div>
 
+    <!-- 5. Ronaのオンライン英会話 -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">💬</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">✅ Ronaのオンライン英会話</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">英語のみの楽しいレッスン。英会話の基礎〜日常会話を明るく指導。</p>
+      </div>
+      <a href="rona.html" style="display: block; padding: 10px 0; background: #0056b3; color: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">レッスンを見る</a>
+    </div>
 
+    <!-- 6. お問い合わせ -->
+    <div style="background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 24px; margin-bottom: 12px;">📩</div>
+        <h2 style="font-size: 18px; margin: 0 0 12px 0; color: #222222;">📩 お問い合わせ</h2>
+        <p style="font-size: 14px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">まずは無料相談から。内容・納期・料金の目安をご案内します。</p>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <a href="mailto:example@gmail.com" style="flex: 1; padding: 10px 0; background: #0056b3; color: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">Gmailで相談</a>
+        <a href="https://line.me" style="flex: 1; padding: 10px 0; background: #00b900; color: #ffffff; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center;">LINEで相談</a>
+      </div>
+    </div>
 
-    
+  </main>
 
-   
-      
-
-
-  
-   
-    
-
- 
-
-  
+</body>
+</html>
